@@ -32,8 +32,13 @@
 
   <body>
     <div id="page-wrap">
-      <header id="page-header" class="navbar navbar-expand-sm navbar-dark bg-dark flex-column flex-md-row justify-content-between">
-        <a class="navbar-brand mr-0" href="/">NEW_APP_NAME</a>
+      <header id="page-header" class="navbar navbar-expand-sm navbar-dark flex-column flex-md-row justify-content-between">
+        <a class="navbar-brand mr-0" href="/"><img src="/images/highbeamsdubai-menu-logo.png" alt=""></a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/">MAP</a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/blog">BLOG</a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/schedule">SCHEDULE</a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/gallery">GALLERY</a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/about">ABOUT</a>
         <div class="navbar-nav flex-row">
           <!-- LOGGED-IN NAVIGATION -->
           <% if(me) { %>
@@ -51,12 +56,12 @@
           <a class="nav-item nav-link ml-2 mr-2 d-block d-sm-none" href="/logout">Sign out</a>
           <% } else { %>
           <!-- LOGGED-OUT NAVIGATION -->
-          <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/faq">FAQ</a>
-          <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/login">Log in</a>
+          <a class="nav-item black nav-link ml-2 ml-md-0 mr-2" href="/runs">RUN |</a>
+          <a class="nav-item black nav-link ml-2 ml-md-0 mr-2" href="/parties">PARTY</a>
           <!-- Only in desktop nav -->
-          <div class="form-inline d-none ml-2 d-md-block" >
+          <!-- <div class="form-inline d-none ml-2 d-md-block" >
             <a class="btn btn-outline-info" href="/signup">Sign up</a>
-          </div>
+          </div> -->
           <!-- Only in mobile nav -->
           <a class="nav-item nav-link text-info ml-2 d-block d-md-none" href="/signup">Sign up</a>
           <% } %>
@@ -127,6 +132,7 @@
     <script src="/js/utilities/is-valid-email-address.js"></script>
     <script src="/js/utilities/open-stripe-checkout.js"></script>
     <script src="/js/pages/498.page.js"></script>
+    <script src="/js/pages/about.page.js"></script>
     <script src="/js/pages/account/account-overview.page.js"></script>
     <script src="/js/pages/account/change-password.page.js"></script>
     <script src="/js/pages/account/edit-profile.page.js"></script>
@@ -141,6 +147,8 @@
     <script src="/js/pages/homepage.page.js"></script>
     <script src="/js/pages/legal/privacy.page.js"></script>
     <script src="/js/pages/legal/terms.page.js"></script>
+    <script src="/js/pages/parties.page.js"></script>
+    <script src="/js/pages/runs.page.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>
