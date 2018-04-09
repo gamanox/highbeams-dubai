@@ -33,12 +33,12 @@
   <body>
     <div id="page-wrap">
       <header id="page-header" class="navbar navbar-expand-sm navbar-dark flex-column flex-md-row justify-content-between">
-        <a class="navbar-brand mr-0" href="/" id="menu-logo"><img src="/images/highbeamsdubai-menu-logo.png" alt=""></a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/"><span style="color: white;">MAP</span></a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="http://medium.com" target="_blank"><span style="color: white;">BLOG</span></a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/schedule"><span style="color: white;">SCHEDULE</span></a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/gallery"><span style="color: white;">GALLERY</span></a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/about"><span style="color: white;">ABOUT</span></a>
+        <a class="navbar-brand mr-0" href="/"><img src="/images/highbeamsdubai-menu-logo-black.png" alt=""></a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/"><span style="color: black;">MAP</span></a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="http://medium.com" target="_blank"><span style="color: black;">BLOG</span></a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/schedule"><span style="color: black;">SCHEDULE</span></a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/gallery"><span style="color: black;">GALLERY</span></a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/about"><span style="color: black;">ABOUT</span></a>
         <div class="navbar-nav flex-row">
           <!-- LOGGED-IN NAVIGATION -->
           <% if(me) { %>
@@ -56,8 +56,8 @@
           <a class="nav-item nav-link ml-2 mr-2 d-block d-sm-none" href="/logout">Sign out</a>
           <% } else { %>
           <!-- LOGGED-OUT NAVIGATION -->
-          <a class="nav-item black nav-link ml-2 ml-md-0 mr-2" href="/runs"><span style="color: white;">RUN</span> </a>
-          <a class="nav-item black nav-link ml-2 ml-md-0 mr-2" href="/parties"><span style="color: white;">PARTY</span></a>
+          <a class="nav-item black nav-link ml-2 ml-md-0 mr-2" href="/runs"><span style="color: black;">RUN</span> </a>
+          <a class="nav-item black nav-link ml-2 ml-md-0 mr-2" href="/parties"><span style="color: black;">PARTY</span></a>
           <!-- Only in desktop nav -->
           <!-- <div class="form-inline d-none ml-2 d-md-block" >
             <a class="btn btn-outline-info" href="/signup">Sign up</a>
@@ -87,14 +87,14 @@
 
       <footer id="page-footer" class="navbar navbar-light justify-content-between flex-row-reverse">
         <div class="nav">
-          <!-- <small class="nav-item"><a class="nav-link text-info" href="/contact">Contact us</a></small>
+          <small class="nav-item"><a class="nav-link text-info" href="/contact">Contact us</a></small>
           <small class="nav-item"><a class="nav-link text-info" href="/legal/terms">Terms of Use</a></small>
-          <small class="nav-item"><a class="nav-link text-info" href="/legal/privacy">Privacy policy</a></small> -->
+          <small class="nav-item"><a class="nav-link text-info" href="/legal/privacy">Privacy policy</a></small>
           <% if(me) { %>
           <small class="nav-item"><a class="nav-link text-info" href="/logout">Sign out</a></small>
           <% } %>
         </div>
-        <small class="copy">Copyright &copy; 2018 HighBeamsDubai. <br class="xs-only"/>All rights reserved.</small>
+        <small class="copy">Copyright &copy; 2018 NEW_APP_COMPANY. <br class="xs-only"/>All rights reserved.</small>
       </footer>
     </div>
 
@@ -107,10 +107,10 @@
       by the asset pipeline between "SCRIPTS" and "SCRIPTS END", or both.
       (https://sailsjs.com/docs/concepts/assets/task-automation)
     */ %>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9It6RmhrAvjHSUoQx6ROy2om1mm6pMyA" async defer></script>
+
     <% /* Load Stripe Checkout */ %>
     <script src="https://checkout.stripe.com/checkout.js"></script>
-    
+
     <% /* Delete the global `self` to help avoid client-side bugs.
     (see https://developer.mozilla.org/en-US/docs/Web/API/Window/self) */ %>
     <script>delete window.self;</script>

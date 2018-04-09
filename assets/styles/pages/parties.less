@@ -5,7 +5,6 @@ body, html {
 #parties {
   background: no-repeat center center fixed;
   background-color: black;
-  background-image: url(/images/highbeamsdubai-home-background.png);
   background-size: cover;
   a:not(.btn) {
     color: @brand;
@@ -15,9 +14,24 @@ body, html {
       color: @text-normal;
     }
   }
+  #map-parties {
+    height: 100%;
+  }
+
+  a[href^="http://maps.google.com/maps"],
+  a[href^="https://maps.google.com/maps"],
+  a[href^="https://www.google.com/maps"] {
+      display: none !important;
+  }
+  .gm-bundled-control .gmnoprint {
+      display: block;
+  }
+  // .gmnoprint:not(.gm-bundled-control) {
+  //     display: none;
+  // }
 
   .hero {
-    background-image: url('/images/highbeamsdubai-parties-background.png');
+    // background-image: url('/images/highbeamsdubai-parties-background.png');
     background-position: 0 0;
     background-size: cover;
     background-repeat: no-repeat;
