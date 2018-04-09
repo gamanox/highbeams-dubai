@@ -3,10 +3,8 @@ body, html {
 }
 
 #homepage {
-  background: no-repeat center center fixed;
   background-color: black;
-  background-image: url(/images/highbeamsdubai-home-background.png);
-  background-size: cover;
+
   a:not(.btn) {
     color: @brand;
     border-bottom: 1px solid @text-normal;
@@ -21,6 +19,62 @@ body, html {
     padding-bottom: 25px;
     color: @brand;
     position: relative;
+    .home-btn {
+      width: 50%;
+      min-height: 100%;
+      position: absolute;
+      top: 0;
+      background-size: cover;
+      
+      .party {
+        position: absolute;
+        width: 226px;
+        height: 47px;
+        left: 50%;
+        top: 50%;
+        margin-left: -113px;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-image: url(/images/highbeamsdubai-home-party-btn.png);
+        cursor: pointer;
+      }
+      .run {
+        position: absolute;
+        width: 226px;
+        height: 50px;
+        top: 50%;
+        left: 50%;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-image: url(/images/highbeamsdubai-home-run-btn.png);
+        cursor: pointer;
+        margin-left: -113px;
+      }
+
+     &:hover {
+        background-blend-mode: multiply;
+      background-color: rgb(255,0,0);
+        .party {
+          background-position: 0px -49px;
+        }
+        .run {
+          background-position: 0px -50px;
+        }
+
+    }
+
+  }
+    .parties-btn {
+      background-image: url(/images/highbeamsdubai-home-background-left.png);
+      left: 0;
+      background-position: 0% 50%;
+
+    }
+    .runs-btn {
+      background-image: url(/images/highbeamsdubai-home-background-right.png);
+      right: 0;
+      background-position: 0% 50%;
+    }
     .hero-image {
       width: 220px;
       height: 170px;
@@ -30,38 +84,7 @@ body, html {
       img {
         position: absolute;
       }
-      .party {
-        text-decoration: none;
-        border: none;
-        position: absolute;
-        width: 226px;
-        height: 47px;
-        left: -160%;
-        top: 25px;
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        background-image: url(/images/highbeamsdubai-home-party-btn.png);
-        cursor: pointer;
-        &:hover {
-          background-position: 0px -49px;
-        }
-      }
-      .run {
-        text-decoration: none;
-        border: none;
-        position: absolute;
-        width: 226px;
-        height: 50px;
-        top: 25px;
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        background-image: url(/images/highbeamsdubai-home-run-btn.png);
-        left: 160%;
-        cursor: pointer;
-        &:hover {
-          background-position: 0px -50px;
-        }
-      }
+      
       .logo {
         width: 123px;
         height: 74px;
