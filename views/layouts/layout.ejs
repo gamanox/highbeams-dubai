@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>NEW_APP_NAME</title>
+    <title>HIGH-BEAMS-DUBAI</title>
 
     <% /* Viewport tag for sensible mobile support */ %>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -34,11 +34,11 @@
     <div id="page-wrap">
       <header id="page-header" class="navbar navbar-expand-sm navbar-dark flex-column flex-md-row justify-content-between">
         <a class="navbar-brand mr-0" href="/"><img src="/images/highbeamsdubai-menu-logo.png" alt=""></a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/">MAP</a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/blog">BLOG</a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/schedule">SCHEDULE</a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/gallery">GALLERY</a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/about">ABOUT</a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/"><span style="color: black;">MAP</span></a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="http://medium.com" target="_blank"><span style="color: black;">BLOG</span></a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/schedule"><span style="color: black;">SCHEDULE</span></a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/gallery"><span style="color: black;">GALLERY</span></a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/about"><span style="color: black;">ABOUT</span></a>
         <div class="navbar-nav flex-row">
           <!-- LOGGED-IN NAVIGATION -->
           <% if(me) { %>
@@ -56,8 +56,8 @@
           <a class="nav-item nav-link ml-2 mr-2 d-block d-sm-none" href="/logout">Sign out</a>
           <% } else { %>
           <!-- LOGGED-OUT NAVIGATION -->
-          <a class="nav-item black nav-link ml-2 ml-md-0 mr-2" href="/runs">RUN |</a>
-          <a class="nav-item black nav-link ml-2 ml-md-0 mr-2" href="/parties">PARTY</a>
+          <a class="nav-item black nav-link ml-2 ml-md-0 mr-2" href="/runs"><span style="color: black;">RUN</span> </a>
+          <a class="nav-item black nav-link ml-2 ml-md-0 mr-2" href="/parties"><span style="color: black;">PARTY</span></a>
           <!-- Only in desktop nav -->
           <!-- <div class="form-inline d-none ml-2 d-md-block" >
             <a class="btn btn-outline-info" href="/signup">Sign up</a>
@@ -144,11 +144,13 @@
     <script src="/js/pages/entrance/new-password.page.js"></script>
     <script src="/js/pages/entrance/signup.page.js"></script>
     <script src="/js/pages/faq.page.js"></script>
+    <script src="/js/pages/gallery.page.js"></script>
     <script src="/js/pages/homepage.page.js"></script>
     <script src="/js/pages/legal/privacy.page.js"></script>
     <script src="/js/pages/legal/terms.page.js"></script>
     <script src="/js/pages/parties.page.js"></script>
     <script src="/js/pages/runs.page.js"></script>
+    <script src="/js/pages/schedule.page.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>

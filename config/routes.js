@@ -21,6 +21,8 @@ module.exports.routes = {
   'GET /parties':            { view:   'pages/parties' },
   'GET /runs':               { view:   'pages/runs' },
   'GET /about':              { view:   'pages/about' },
+  'GET /gallery':            { view:   'pages/gallery' },
+  'GET /schedule':           { view:   'pages/schedule' },
   'GET /legal/terms':        { view:   'pages/legal/terms' },
   'GET /legal/privacy':      { view:   'pages/legal/privacy' },
   'GET /contact':            { view:   'pages/contact' },
