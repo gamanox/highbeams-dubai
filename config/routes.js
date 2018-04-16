@@ -21,6 +21,7 @@ module.exports.routes = {
   'GET /parties':            { view:   'pages/parties' },
   'GET /runs':               { view:   'pages/runs' },
   'GET /about':              { view:   'pages/about', locals: { layout: 'layouts/layout-black' } },
+  'GET /blog':               { action: 'view-blog', locals: { layout: 'layouts/layout-black' } },
   'GET /gallery':            { view:   'pages/gallery', locals: { layout: 'layouts/layout-black' }},
   'GET /schedule':           { view:   'pages/schedule', locals: { layout: 'layouts/layout-black' } },
   'GET /legal/terms':        { view:   'pages/legal/terms' },

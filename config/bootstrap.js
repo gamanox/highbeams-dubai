@@ -13,6 +13,7 @@ module.exports.bootstrap = async function(done) {
 
   // Import dependencies
   var path = require('path');
+  sails.feed = require('rss-to-json');
 
   // This bootstrap version indicates what version of fake data we're dealing with here.
   var HARD_CODED_DATA_VERSION = 0;

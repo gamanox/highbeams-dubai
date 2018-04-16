@@ -1,0 +1,91 @@
+#blog {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  .blog-title {
+  	font-family: 'Geogrotesque-Bold';
+  	font-size: 72px;
+  	color: black;
+  	margin-top: 120px;
+  	margin-bottom: 100px;
+  	margin-left: 165px;
+  }
+
+  .grid-gallery ul {
+  	list-style: none;
+  	margin: 0;
+  	padding: 0;
+  }
+
+  .grid-gallery figure {
+  	margin: 0;
+  }
+
+  .grid-gallery figure img {
+  	display: block;
+  	width: 100%;
+  }
+
+  .grid-gallery figcaption h3 {
+  	margin: 0;
+  	padding: 0 0 0.5em;
+  }
+
+  .grid-gallery figcaption p {
+  	margin: 0;
+  }
+
+  /* Grid style */
+  .grid-wrap {
+  	max-width: 69em;
+  	margin: 0 auto;
+  	padding: 0 1em 1.875em;
+  }
+
+  .grid {
+  	margin: 0 auto;
+  }
+
+  .grid li {
+  	width: 25%;
+  	float: left;
+  	cursor: pointer;
+  	&:hover{
+  		background: red;
+  	}
+
+  	a {
+  		color: #4e4e4e;
+  		font-family: 'Geogrotesque-Regular';
+  		font-size: 24px;
+  		text-decoration: none;
+  		&:hover {
+  		color: red;
+  		figure {
+  			// background: red;
+			
+  		}
+  		}
+  	}
+  }
+
+  .grid figure {
+  	padding: 15px;
+  	-webkit-transition: opacity 0.2s;
+  	transition: opacity 0.2s;
+  }
+
+  .grid li:hover figure {
+  	opacity: 0.7;
+  }
+
+  .grid figcaption {
+  	background: #e4e4e4;
+  	padding: 25px;
+  }
+
+  @media (max-width: 500px) {
+    code {
+      word-break: break-all;
+    }
+  }
+}

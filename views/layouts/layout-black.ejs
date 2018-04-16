@@ -11,7 +11,7 @@
     above the «body» to prevent the page flickering when fonts load.)  */ %>
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/96cbd61ead.js"></script>
-
+    <script src="/dependencies/modernizr.custom.js"></script>
     <% /*
         Stylesheets
         ========================
@@ -35,7 +35,7 @@
       <header id="page-header" class="navbar navbar-expand-sm navbar-dark flex-column flex-md-row justify-content-between">
         <a class="navbar-brand mr-0" href="/"><img src="/images/highbeamsdubai-menu-logo-black.png" alt=""></a>
         <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/"><div class="red"></div><span style="color: black;">MAP</span></a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="http://medium.com" target="_blank" id="menu-blog"><div class="red"></div><span style="color: black;">BLOG</span></a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/blog" id="menu-blog"><div class="red"></div><span style="color: black;">BLOG</span></a>
         <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/schedule" id="menu-schedule"><div class="red"></div><span style="color: black;">SCHEDULE</span></a>
         <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/gallery" id="menu-gallery"><div class="red"></div><span style="color: black;">GALLERY</span></a>
         <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/about" id="menu-about"><div class="red"></div><span style="color: black;">ABOUT</span></a>
@@ -123,7 +123,12 @@
     <script src="/dependencies/vue.js"></script>
     <script src="/dependencies/bootstrap-4/popper.js"></script>
     <script src="/dependencies/bootstrap-4/bootstrap.js"></script>
+    <script src="/dependencies/cbpGridGallery.js"></script>
+    <script src="/dependencies/classie.js"></script>
     <script src="/dependencies/cloud.js"></script>
+    <script src="/dependencies/imagesloaded.pkgd.min.js"></script>
+    <script src="/dependencies/masonry.pkgd.min.js"></script>
+    <script src="/dependencies/modernizr.custom.js"></script>
     <script src="/dependencies/parasails.js"></script>
     <script src="/js/cloud.setup.js"></script>
     <script src="/js/components/ajax-button.component.js"></script>
@@ -136,6 +141,7 @@
     <script src="/js/pages/account/account-overview.page.js"></script>
     <script src="/js/pages/account/change-password.page.js"></script>
     <script src="/js/pages/account/edit-profile.page.js"></script>
+    <script src="/js/pages/blog.page.js"></script>
     <script src="/js/pages/contact.page.js"></script>
     <script src="/js/pages/dashboard/welcome.page.js"></script>
     <script src="/js/pages/entrance/confirmed-email.page.js"></script>
