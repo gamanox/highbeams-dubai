@@ -1,9 +1,14 @@
 body, html {
-  background-color: white;
+  background-color: transparent;
 }
 
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
 #gallery {
-  background-color: white;
+  background-color: transparent;
   a:not(.btn) {
     color: @brand;
     border-bottom: 1px solid @text-normal;
@@ -11,6 +16,85 @@ body, html {
       text-decoration: none;
       color: @text-normal;
     }
+
+  
+
+  }
+
+.container {
+  margin-top: 100px;
+  @media (min-width: 1400px) {
+      max-width: 1400px;
+  }
+}
+
+  .grid {
+    background: transparent;
+  }
+
+  /* clear fix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  /* ---- .grid-item ---- */
+.gutter-sizer { width: 1%; }
+  .grid-sizer,
+  .grid-item {
+    width: 30%;
+    margin-bottom: 10px;
+
+  }
+
+  .grid-item {
+    float: left;
+    width: 30%;
+    position: relative;
+
+    margin-bottom: 10px;
+    &:hover {
+      .red, .description {
+        visibility: visible;
+      }
+    }
+    
+  }
+  .grid-item .red {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    mix-blend-mode: multiply;
+    background-color: #FB000C;
+      // background-blend-mode: multiply;
+
+  }
+  .description {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 30%;
+  visibility: hidden;
+
+  }
+  .description p {
+  font-family: 'Geogrotesque-Regular';
+  font-size: 16px;
+  color: white;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  }
+
+  .grid-item img {
+    display: block;
+    max-width: 100%;
+    // padding: 1%;
+    
   }
 
   .hero {

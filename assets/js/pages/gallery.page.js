@@ -29,11 +29,25 @@ parasails.registerPage('gallery', {
       var $hero = this.$find('[full-page-hero]');
       var headerHeight = $('#page-header').outerHeight();
       var heightToSet = $(window).height();
-      heightToSet = Math.max(heightToSet, 600);
-      heightToSet = Math.min(heightToSet, 1000);
+      // heightToSet = Math.max(heightToSet, 600);
+      // heightToSet = Math.min(heightToSet, 1000);
       // $hero.css('min-height', heightToSet);
-      // $hero.css('min-height', heightToSet - headerHeight+'px');
+      $hero.css('min-height', heightToSet - headerHeight+'px');
       this.heroHeightSet = true;
+      $('.navbar .nav-link').removeClass('active');
+      $('#menu-gallery').addClass('active');
+
+      var $grid = $('.grid').masonry({
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        gutter: '.gutter-sizer',
+        columnWidth: '.grid-sizer'
+      });
+      // layout Masonry after each image loads
+      $grid.imagesLoaded().progress( function() {
+        $grid.masonry();
+      });  
+      
     },
 
     clickHeroButton: function() {

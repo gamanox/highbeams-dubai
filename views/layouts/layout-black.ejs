@@ -31,6 +31,7 @@
   </head>
 
   <body>
+    <div class="dirt"></div>
     <div id="page-wrap">
       <header id="page-header" class="navbar navbar-expand-sm navbar-dark flex-column flex-md-row justify-content-between">
         <a class="navbar-brand mr-0" href="/"><img src="/images/highbeamsdubai-menu-logo-black.png" alt=""></a>
@@ -113,6 +114,7 @@
 
     <% /* Delete the global `self` to help avoid client-side bugs.
     (see https://developer.mozilla.org/en-US/docs/Web/API/Window/self) */ %>
+    <%- blocks.localScripts %>
     <script>delete window.self;</script>
 
     <% /* Auto-injected <script> tags: */ %>
