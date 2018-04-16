@@ -1,6 +1,30 @@
 @footer-height: 40px;
 @container-md-max-width: 1100px;
 
+@font-face {
+    font-family: 'Geogrotesque-Regular';
+    src: url('Geogrotesque-Regular.eot');
+    src: url('Geogrotesque-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Geogrotesque-Regular.woff2') format('woff2'),
+        url('Geogrotesque-Regular.woff') format('woff'),
+        url('Geogrotesque-Regular.ttf') format('truetype'),
+        url('Geogrotesque-Regular.svg#Geogrotesque-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Geogrotesque-Bold';
+    src: url('Geogrotesque-Bold.eot');
+    src: url('Geogrotesque-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Geogrotesque-Bold.woff2') format('woff2'),
+        url('Geogrotesque-Bold.woff') format('woff'),
+        url('Geogrotesque-Bold.ttf') format('truetype'),
+        url('Geogrotesque-Bold.svg#Geogrotesque-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
 [v-cloak] { display: none }
 
 html, body {
@@ -24,8 +48,31 @@ html, body {
     z-index: 2;
     padding: 3.5rem 4rem;
     a {
+      width: 103px;
+      height: 40px;
+      text-align: center;
+      position: relative;
+      .red {
+        background: url(/images/menu-over.png);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        width: 103px;
+        height: 40px;
+        display: block;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+      }
+      span {
+        z-index: 1;
+        position: relative;
+      }
       cursor: pointer;
       color: black;
+      font-family: 'Geogrotesque-Regular';
+      font-size: 16px;
       // .strikeout {
       //   font-size: 4em;
       //   line-height: 1em;
@@ -41,14 +88,18 @@ html, body {
       //   top: 50%;
       // }
       &:hover {
-        /*border-bottom: red 1px solid;*/
-        color: red;
-        text-decoration: line-through;
+        // color: red;
+        // text-decoration: line-through;
+        .red {
+          visibility: visible;
+        }
       }
       &.active {
-        /*border-bottom: red 1px solid;*/
-        color: red;
-        text-decoration: line-through;
+        // color: red;
+        // text-decoration: line-through;
+        .red {
+          visibility: visible;
+        }
       }
     }
     .dropdown-menu.account-menu {
@@ -67,9 +118,11 @@ html, body {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   height: @footer-height;
   width: 100%;
+  color: red;
   position: absolute;
   left: 0px;
   bottom: 0px;
+  background: #000;
   .xs-only {
     display: none;
   }

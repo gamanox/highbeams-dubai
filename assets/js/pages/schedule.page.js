@@ -34,6 +34,8 @@ parasails.registerPage('schedule', {
       // $hero.css('min-height', heightToSet);
       // $hero.css('min-height', heightToSet - headerHeight+'px');
       this.heroHeightSet = true;
+      $('.navbar .nav-link').removeClass('active');
+      $('#menu-schedule').addClass('active');
     },
 
     clickHeroButton: function() {

@@ -29,8 +29,10 @@ parasails.registerPage('homepage', {
       var $hero = this.$find('[full-page-hero]');
       var headerHeight = $('#page-header').outerHeight();
       var heightToSet = $(window).height();
-      heightToSet = Math.max(heightToSet, 600);
-      heightToSet = Math.min(heightToSet, 1000);
+      // var audio = new Audio('audio_file.mp3');
+      // audio.play();
+      // heightToSet = Math.max(heightToSet, 600);
+      // heightToSet = Math.min(heightToSet, 1000);
       $hero.css('min-height', heightToSet);
       $('.home-btn').css('min-height', heightToSet);
       $('#page-header').hide();

@@ -34,11 +34,11 @@
     <div id="page-wrap">
       <header id="page-header" class="navbar navbar-expand-sm navbar-dark flex-column flex-md-row justify-content-between">
         <a class="navbar-brand mr-0" href="/" id="menu-logo"><img src="/images/highbeamsdubai-menu-logo.png" alt=""></a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/"><span style="color: white;">MAP</span></a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="http://medium.com" target="_blank"><span style="color: white;">BLOG</span></a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/schedule"><span style="color: white;">SCHEDULE</span></a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/gallery"><span style="color: white;">GALLERY</span></a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/about"><span style="color: white;">ABOUT</span></a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/" id="menu-map"><div class="red"></div><span style="color: white;">MAP</span></a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="http://medium.com" target="_blank" id="menu-blog"><div class="red"></div><span style="color: white;">BLOG</span></a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/schedule" id="menu-schedule"><div class="red"></div><span style="color: white;">SCHEDULE</span></a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/gallery" id="menu-gallery"><div class="red"></div><span style="color: white;">GALLERY</span></a>
+        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/about" id="menu-about"><div class="red"></div><span style="color: white;">ABOUT</span></a>
         <div class="navbar-nav flex-row">
           <!-- LOGGED-IN NAVIGATION -->
           <% if(me) { %>
@@ -107,14 +107,15 @@
       by the asset pipeline between "SCRIPTS" and "SCRIPTS END", or both.
       (https://sailsjs.com/docs/concepts/assets/task-automation)
     */ %>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD9It6RmhrAvjHSUoQx6ROy2om1mm6pMyA" async defer></script>
+    
     <% /* Load Stripe Checkout */ %>
     <script src="https://checkout.stripe.com/checkout.js"></script>
     
     <% /* Delete the global `self` to help avoid client-side bugs.
     (see https://developer.mozilla.org/en-US/docs/Web/API/Window/self) */ %>
     <script>delete window.self;</script>
-
+    <%- blocks.localScripts %>
+    
     <% /* Auto-injected <script> tags: */ %>
     <!--SCRIPTS-->
     <script src="/dependencies/sails.io.js"></script>
@@ -152,5 +153,7 @@
     <script src="/js/pages/runs.page.js"></script>
     <script src="/js/pages/schedule.page.js"></script>
     <!--SCRIPTS END-->
+    
+
   </body>
 </html>

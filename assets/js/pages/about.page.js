@@ -34,7 +34,8 @@ parasails.registerPage('about', {
       // $hero.css('min-height', heightToSet);
       // $hero.css('min-height', heightToSet - headerHeight+'px');
       this.heroHeightSet = true;
-      $('#menu-logo').attr('src', '/images/highbeamsdubai-menu-logo-black.png');
+      $('.navbar .nav-link').removeClass('active');
+      $('#menu-about').addClass('active');
     },
 
     clickHeroButton: function() {
