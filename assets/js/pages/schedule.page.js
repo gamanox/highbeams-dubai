@@ -29,10 +29,12 @@ parasails.registerPage('schedule', {
       var $hero = this.$find('[full-page-hero]');
       var headerHeight = $('#page-header').outerHeight();
       var heightToSet = $(window).height();
-      heightToSet = Math.max(heightToSet, 600);
-      heightToSet = Math.min(heightToSet, 1000);
+      // heightToSet = Math.max(heightToSet, 600);
+      // heightToSet = Math.min(heightToSet, 1000);
       // $hero.css('min-height', heightToSet);
       // $hero.css('min-height', heightToSet - headerHeight+'px');
+      $hero.css('min-height', heightToSet);
+
       this.heroHeightSet = true;
       $('.navbar .nav-link').removeClass('active');
       $('#menu-schedule').addClass('active');

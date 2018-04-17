@@ -34,13 +34,13 @@
     <div class="dirt"></div>
     <div id="page-wrap">
       <header id="page-header" class="navbar navbar-expand-sm navbar-dark flex-column flex-md-row justify-content-between">
-        <a class="navbar-brand mr-0" href="/"><img src="/images/highbeamsdubai-menu-logo-black.png" alt=""></a>
+        <a class="navbar-brand mr-0 hb-logo" href="/"><img src="/images/highbeamsdubai-menu-logo-black.png" alt=""></a>
         <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/"><div class="red"></div><span style="color: black;">MAP</span></a>
         <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/blog" id="menu-blog"><div class="red"></div><span style="color: black;">BLOG</span></a>
         <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/schedule" id="menu-schedule"><div class="red"></div><span style="color: black;">SCHEDULE</span></a>
         <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/gallery" id="menu-gallery"><div class="red"></div><span style="color: black;">GALLERY</span></a>
         <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/about" id="menu-about"><div class="red"></div><span style="color: black;">ABOUT</span></a>
-        <div class="navbar-nav flex-row">
+        <div class="navbar-nav flex-row run-party-menu">
           <!-- LOGGED-IN NAVIGATION -->
           <% if(me) { %>
           <a class="nav-item nav-link ml-2 ml-md-0 mr-2 mr-md-0" href="/contact">Help</a>
@@ -57,8 +57,9 @@
           <a class="nav-item nav-link ml-2 mr-2 d-block d-sm-none" href="/logout">Sign out</a>
           <% } else { %>
           <!-- LOGGED-OUT NAVIGATION -->
-          <a class="nav-item black nav-link ml-2 ml-md-0 mr-2" href="/runs"><span style="color: black;">RUN</span> </a>
           <a class="nav-item black nav-link ml-2 ml-md-0 mr-2" href="/parties"><span style="color: black;">PARTY</span></a>
+          <span class="separator" style="color: black;">|</span>
+          <a class="nav-item black nav-link ml-2 ml-md-0 mr-2" href="/runs"><span style="color: black;">RUN</span> </a>
           <!-- Only in desktop nav -->
           <!-- <div class="form-inline d-none ml-2 d-md-block" >
             <a class="btn btn-outline-info" href="/signup">Sign up</a>

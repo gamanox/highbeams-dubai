@@ -31,6 +31,15 @@ html, body {
   height: 100%;
   margin: 0;
 }
+
+.hb-logo img {
+  margin-top: -25px;
+}
+
+
+
+
+
 .dirt {
   background: url('/images/dirt.png');
   background-size: cover;
@@ -42,6 +51,23 @@ html, body {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+.dirt-white {
+  background: url('/images/dirt-white.png');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 0.3;
+  // mix-blend-mode: soft-light;
 }
 
 #page-wrap {
@@ -59,6 +85,24 @@ html, body {
     width: 100%;
     z-index: 2;
     padding: 3.5rem 4rem;
+    .run-party-menu {
+      width: 25% !important;
+      flex-direction: row-reverse !important;
+      span.separator {
+          color: initial;
+          height: 40px;
+          padding: 8px 0px;
+        }
+      a {
+        width: auto;
+        margin-right: 0px !important;
+        &:hover, &.active {
+          span{
+            font-family: 'Geogrotesque-Bold';
+          }
+        }
+      }
+    }
     a {
       width: 103px;
       height: 40px;
@@ -66,6 +110,7 @@ html, body {
       position: relative;
       font-family: 'Geogrotesque-Regular';
       font-size: 16px;
+
       .red {
         background: url(/images/menu-over.png);
         background-position: 50% 50%;
@@ -129,14 +174,13 @@ html, body {
 }
 
 #page-footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
   height: @footer-height;
   width: 100%;
   color: red;
   position: absolute;
   left: 0px;
   bottom: 0px;
-  background: #000;
+  background: transparent;
   .xs-only {
     display: none;
   }

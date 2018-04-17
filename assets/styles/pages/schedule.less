@@ -3,7 +3,49 @@ body, html {
 }
 
 #schedule {
-  background-color: white;
+  background-color: transpernt;
+
+  .container {
+    // margin-top: 100px;
+    @media (min-width: 1400px) {
+      max-width: 1400px;
+  }
+  }
+  
+  .month {
+    // width: 409px;
+    // height: 17px;
+    background: url('/images/month-red-line.png');
+    background-position: 50% 50%;
+    background-size: 409px 17px;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-bottom: 70px;
+
+    p{
+
+      font-family: 'Geogrotesque-Bold';
+      font-size: 72px;
+      color: black;
+    }
+    
+  }
+
+  .event {
+    p {
+      text-align: center;
+      font-family: 'Geogrotesque-Regular';
+      color: black;
+      font-size: 16px;
+      margin: 0;
+    }
+    p.name {
+      font-family: 'Geogrotesque-Bold';
+      color: #fb000c;
+    }
+  }
+
+
   a:not(.btn) {
     color: @brand;
     border-bottom: 1px solid @text-normal;

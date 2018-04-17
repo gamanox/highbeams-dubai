@@ -12,6 +12,7 @@
     "rss-to-json": "1.0.4",
     "sails": "^1.0.0-46",
     "sails-hook-apianalytics": "^2.0.0",
+    "sails-hook-autoreload": "^1.1.0",
     "sails-hook-organics": "^0.13.0",
     "sails-hook-orm": "^2.0.0-16",
     "sails-hook-sockets": "^1.4.0",

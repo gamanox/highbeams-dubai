@@ -1,21 +1,26 @@
 <div id="blog" :class="[heroHeightSet ? '' : 'uninitialized']" v-cloak>
   <div id="grid-gallery" class="grid-gallery">
-  	<h3 class="blog-title">BLOG</h3>
-  	<section class="grid-wrap">
-  	<ul class="grid">
-  		<li class="grid-sizer"></li>
-		<% _.each(feeds.items, function (post) { %>
-		<li><a href="<%= post.link %>" target="_blank">
-			<figure>
-				<img src="<%= post.thumbnail %>" alt="">
-				<figcaption><h3><%= post.title %></h3></figcaption>
-			</figure>
-			</a>
-		</li>
-			
-		<% }) %>
-  	</ul>
-  	</section>
+  	<div class="container">
+  		<div class="row">
+  			<div class="col">
+  				  	<section class="grid-wrap">
+  				  	<ul class="grid">
+  				  		<li class="grid-sizer"></li>
+  						<% _.each(feeds.items, function (post) { %>
+  						<li><a href="<%= post.link %>" target="_blank">
+  							<figure>
+  								<img src="<%= post.thumbnail %>" alt="">
+  								<figcaption><h3><%= post.title %></h3></figcaption>
+  							</figure>
+  							</a>
+  						</li>
+  							
+  						<% }) %>
+  				  	</ul>
+  				  	</section>
+  			</div>
+  		</div>
+  	</div>
   </div>
 	 
   

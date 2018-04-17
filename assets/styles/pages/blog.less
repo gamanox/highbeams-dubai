@@ -1,6 +1,15 @@
 #blog {
   padding-top: 75px;
   padding-bottom: 75px;
+
+  .container {
+    margin-top: 100px;
+    @media (min-width: 1400px) {
+        max-width: 1400px;
+    }
+  }
+
+
   .blog-title {
   	font-family: 'Geogrotesque-Bold';
   	font-size: 72px;
@@ -79,8 +88,11 @@
   }
 
   .grid figcaption {
-  	background: #e4e4e4;
+  	background: transparent;
   	padding: 25px;
+    h3 {
+      color: black;
+    }
   }
 
   @media (max-width: 500px) {
