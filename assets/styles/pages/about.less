@@ -75,14 +75,26 @@ body, html {
     background-repeat: no-repeat;
     text-decoration: none !important;
     border-bottom: none !important;
-    
+    img {
+      visibility: hidden;
+      position: relative;
+      display: block;
+      top: 48%;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+    }
 
   
     &:hover {
       
         background-color: #FB000C;
       background-blend-mode: multiply;
-      
+
+      img {
+        visibility: visible;
+      }
       
     }
   }

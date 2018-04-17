@@ -86,16 +86,14 @@
 
       <%- body %>
 
-      <footer id="page-footer" class="navbar navbar-light justify-content-between flex-row-reverse">
+      <footer id="page-footer" style="background-color: black;" class="navbar navbar-light justify-content-between flex-row-reverse">
         <div class="nav">
-          <!-- <small class="nav-item"><a class="nav-link text-info" href="/contact">Contact us</a></small>
-          <small class="nav-item"><a class="nav-link text-info" href="/legal/terms">Terms of Use</a></small>
-          <small class="nav-item"><a class="nav-link text-info" href="/legal/privacy">Privacy policy</a></small> -->
-          <% if(me) { %>
-          <small class="nav-item"><a class="nav-link text-info" href="/logout">Sign out</a></small>
-          <% } %>
+          <a href="https://www.instagram.com/highbeamsdubai/" target="_blank" class="instagram-hb" style="color: white;"><img src="/images/instagram-icon-white.png" alt="">Vibes First. <span>Powered by PUMA.</span></a>
         </div>
-        <small class="copy">Copyright &copy; 2018 HighBeamsDubai. <br class="xs-only"/>All rights reserved.</small>
+        <div id="play-pause" onClick="togglePlay()" style="background: url('/images/sound-white.png');"></div>
+        <audio preload="auto" src="/images/hb-music.mp3" loop="true" autobuffer>
+        Unsupported in Firefox
+        </audio>
       </footer>
     </div>
 
@@ -124,6 +122,7 @@
     <script src="/dependencies/jquery.min.js"></script>
     <script src="/dependencies/vue.js"></script>
     <script src="/dependencies/bootstrap-4/popper.js"></script>
+    <script src="/dependencies/audio.js"></script>
     <script src="/dependencies/bootstrap-4/bootstrap.js"></script>
     <script src="/dependencies/cbpGridGallery.js"></script>
     <script src="/dependencies/classie.js"></script>
