@@ -13,6 +13,8 @@ function closeMenu() {
 }
 
 function togglePlay() {
+  var musicBtn = document.getElementById('play-pause');
+  musicBtn.classList.toggle("off");
   return song.paused ? song.play() : song.pause();
 };
 
@@ -58,4 +60,4 @@ function update()
     setCookie('timePlayed', song.currentTime);
     }
 }
-// setInterval(update,10);
+setInterval(update,10);
