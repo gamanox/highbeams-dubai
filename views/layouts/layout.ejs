@@ -4,7 +4,7 @@
     <title>HIGH-BEAMS-DUBAI</title>
 
     <% /* Viewport tag for sensible mobile support */ %>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
     <% /* Script tags should normally be included further down the page- but scripts
     that load fonts are a special exception to the rule.  (We include them up here
@@ -32,6 +32,13 @@
 
   <body>
     <div id="page-wrap">
+      <div class="navbar d-block d-md-none" id="page-header-mobile">
+        <a href="/" class="navbar-brand mr-0 hb-logo "><img src="/images/highbeamsdubai-menu-logo.png" alt=""></a>
+        <p class="active white hb-current" id="hb-current-parties">HOME</p>
+        <div class="navbar-brand mr-0 hb-menu-btn">
+          <img src="/images/hb-menu-btn.svg" alt="">
+        </div> 
+      </div>
       <header id="page-header" class="navbar navbar-expand-sm navbar-dark flex-column flex-md-row justify-content-between">
         <a class="navbar-brand mr-0 hb-logo" href="/" id="menu-logo"><img src="/images/highbeamsdubai-menu-logo.png" alt=""></a>
         <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/" id="menu-map"><div class="red"></div><span style="color: white;">MAP</span></a>
@@ -64,7 +71,7 @@
             <a class="btn btn-outline-info" href="/signup">Sign up</a>
           </div> -->
           <!-- Only in mobile nav -->
-          <a class="nav-item nav-link text-info ml-2 d-block d-md-none" href="/signup">Sign up</a>
+          <!-- <a class="nav-item nav-link text-info ml-2 d-block d-md-none" href="/signup">Sign up</a> -->
           <% } %>
         </div>
       </header>

@@ -3,6 +3,7 @@ body, html {
 }
 
 #homepage {
+  overflow: hidden;
   background-color: black;
 
   a:not(.btn) {
@@ -217,14 +218,50 @@ body, html {
     }
   }
 
-  @media (max-width: 991px) {
-    .setup {
-      .step {
-        padding-left: 0px;
-        .step-image {
-          display: none;
+  // @media (max-width: 991px) {
+  //   .setup {
+  //     .step {
+  //       padding-left: 0px;
+  //       .step-image {
+  //         display: none;
+  //       }
+  //     }
+  //   }
+  // }
+
+}
+
+@media @smartphones {
+
+  #homepage {
+    min-height: 100%;
+    height: 100%;
+
+    .hero {
+      padding: 0;
+      .container {
+        height: auto;
+      }
+      .hero-image {
+        height: auto;
+        text-align: center;
+        .logo {
+          position: relative;
+          left: auto;
         }
       }
+      .home-btn {
+        min-height: 50% !important;
+        height: 50% !important;
+        width: 100%;
+        position: absolute;
+        display: block;
+        
+      }
+      .runs-btn {
+        top: 50%;
+      }
     }
+
   }
 }
