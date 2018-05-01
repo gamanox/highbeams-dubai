@@ -64,15 +64,24 @@ body, html {
   }
   .sponsor-4 {
     background-image: url('/images/about-person-04.png');
+  } 
+  .sponsor-5 {
+    background-image: url('/images/about-person-06.jpg');
+  } 
+  .sponsor-6 {
+    background-image: url('/images/about-person-07.jpg');
   }  
   
   .sponsor {
     position: relative;
     display: block;
-    width: 254px;
-    height: 362px;
+    width: 100%;
+    // width: 254px;
+    height: 530px;
     margin: auto;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0%;
     text-decoration: none !important;
     border-bottom: none !important;
     img {
@@ -115,6 +124,10 @@ body, html {
   
   .container-about {
     margin-top: 150px !important;
+    .about-img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .hb-title {
@@ -319,6 +332,15 @@ body, html {
           display: none;
         }
       }
+    }
+  }
+}
+
+@media @smartphones {
+  .container-about {
+    .about-img {
+      width: 100%;
+      height: auto;
     }
   }
 }

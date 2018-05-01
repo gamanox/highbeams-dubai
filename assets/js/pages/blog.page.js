@@ -30,7 +30,7 @@ parasails.registerPage('blog', {
 
     // Private methods not tied to a particular DOM event are prefixed with _
     _setHeroHeight: function() {
-      new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+      // new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
       var feed = this.feeds;
       console.log(feed);
       var $hero = this.$find('[full-page-hero]');

@@ -1,6 +1,16 @@
 var song = document.getElementsByTagName('audio')[0];
 var played = false;
 var tillPlayed = getCookie('timePlayed');
+var menuBtn = document.getElementById('menu-btn-mobile');
+
+function openMenu() {
+    var headerMenu = document.getElementById('page-header');
+    headerMenu.classList.add("active");
+}
+function closeMenu() {
+    var headerMenu = document.getElementById('page-header');
+    headerMenu.classList.remove("active");
+}
 
 function togglePlay() {
   return song.paused ? song.play() : song.pause();
@@ -48,4 +58,4 @@ function update()
     setCookie('timePlayed', song.currentTime);
     }
 }
-setInterval(update,10);
+// setInterval(update,10);

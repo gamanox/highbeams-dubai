@@ -41,7 +41,9 @@ parasails.registerPage('parties', {
       $hero.css('min-height', heightToSet+15);
       // $hero.css('min-height', heightToSet - headerHeight+'px');
       this.heroHeightSet = true;
-      $('#hb-current-parties').html('PARTIES');
+      // $('#hb-current-parties').html('PARTIES');
+      $('.navbar .nav-link').removeClass('active');
+      $('#menu-party').addClass('active');
     },
 
     initMap: function() {

@@ -32,20 +32,20 @@
 
   <body>
     <div id="page-wrap">
-      <div class="navbar d-block d-md-none" id="page-header-mobile">
+      <div class="navbar d-block d-lg-none" id="page-header-mobile">
         <a href="/" class="navbar-brand mr-0 hb-logo "><img src="/images/highbeamsdubai-menu-logo.png" alt=""></a>
-        <p class="active white hb-current" id="hb-current-parties">HOME</p>
-        <div class="navbar-brand mr-0 hb-menu-btn">
+        <!-- <p class="active white hb-current" id="hb-current-parties">HOME</p> -->
+        <div id="menu-btn-mobile" class="navbar-brand mr-0 hb-menu-btn" onclick="openMenu()">
           <img src="/images/hb-menu-btn.svg" alt="">
         </div> 
       </div>
       <header id="page-header" class="navbar navbar-expand-sm navbar-dark flex-column flex-md-row justify-content-between">
         <a class="navbar-brand mr-0 hb-logo" href="/" id="menu-logo"><img src="/images/highbeamsdubai-menu-logo.png" alt=""></a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/" id="menu-map"><div class="red"></div><span style="color: white;">MAP</span></a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/blog"  id="menu-blog"><div class="red"></div><span style="color: white;">FEATURES</span></a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/schedule" id="menu-schedule"><div class="red"></div><span style="color: white;">SCHEDULE</span></a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/gallery" id="menu-gallery"><div class="red"></div><span style="color: white;">GALLERY</span></a>
-        <a class="nav-item nav-link ml-2 ml-md-0 mr-2" href="/about" id="menu-about"><div class="red"></div><span style="color: white;">ABOUT</span></a>
+        <a class="nav-item nav-link ml- ml-md-0 mr-0" href="/" id="menu-map"><div class="red"></div><span style="color: white;">MAP</span></a>
+        <a class="nav-item nav-link ml- ml-md-0 mr-0" href="/blog"  id="menu-blog"><div class="red"></div><span style="color: white;">FEATURES</span></a>
+        <a class="nav-item nav-link ml- ml-md-0 mr-0" href="/schedule" id="menu-schedule"><div class="red"></div><span style="color: white;">SCHEDULE</span></a>
+        <a class="nav-item nav-link ml- ml-md-0 mr-0" href="/gallery" id="menu-gallery"><div class="red"></div><span style="color: white;">GALLERY</span></a>
+        <a class="nav-item nav-link ml- ml-md-0 mr-0" href="/about" id="menu-about"><div class="red"></div><span style="color: white;">ABOUT</span></a>
         <div class="navbar-nav flex-row run-party-menu">
           <!-- LOGGED-IN NAVIGATION -->
           <% if(me) { %>
@@ -63,9 +63,9 @@
           <a class="nav-item nav-link ml-2 mr-2 d-block d-sm-none" href="/logout">Sign out</a>
           <% } else { %>
           <!-- LOGGED-OUT NAVIGATION -->
-          <a class="nav-item black nav-link ml-2 ml-md-0 mr-2" href="/parties"><span style="color: white;">PARTY</span></a>
+          <a id="menu-party" class="nav-item black nav-link ml-0 ml-md-0 mr-0" href="/parties"><span style="color: white;">PARTY</span></a>
           <span class="separator"  style="color: white;">|</span>
-          <a class="nav-item black nav-link ml-2 ml-md-0 mr-2" href="/runs"><span style="color: white;">RUN</span> </a>
+          <a id="menu-run" class="nav-item black nav-link ml-0 ml-md-0 mr-0" href="/runs"><span style="color: white;">RUN</span> </a>
           <!-- Only in desktop nav -->
           <!-- <div class="form-inline d-none ml-2 d-md-block" >
             <a class="btn btn-outline-info" href="/signup">Sign up</a>
@@ -74,6 +74,7 @@
           <!-- <a class="nav-item nav-link text-info ml-2 d-block d-md-none" href="/signup">Sign up</a> -->
           <% } %>
         </div>
+        <div id="close-menu" class="d-block d-md-none" onclick="closeMenu()"><img src="/images/hb-close-menu-btn.svg" alt=""></div>
       </header>
 
       <!-- Alert if email has not been confirmed -->

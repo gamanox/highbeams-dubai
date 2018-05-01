@@ -35,6 +35,8 @@ parasails.registerPage('runs', {
       $hero.css('min-height', heightToSet+15);
       // $hero.css('min-height', heightToSet - headerHeight+'px');
       this.heroHeightSet = true;
+      $('.navbar .nav-link').removeClass('active');
+      $('#menu-run').addClass('active');
     },
 
     initMap: function() {

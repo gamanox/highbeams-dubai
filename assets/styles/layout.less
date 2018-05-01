@@ -86,7 +86,7 @@ html, body {
     background: transparent;
     width: 100%;
     z-index: 2;
-    padding: 3.5rem 4rem;
+    padding: 3.5rem 2rem;
     .run-party-menu {
       width: 25% !important;
       flex-direction: row-reverse !important;
@@ -230,8 +230,71 @@ html, body {
     width: 100%;
     height: 100% !important;
     overflow: hidden;
+    &.white {
+      overflow: auto;
+    }
     #page-header {
       display: none;
+      background-color: #000;
+      text-align: center;
+      &.active {
+        display: block;
+      }
+      &.white {
+        background-color: #fff;
+        border-bottom: 1px solid #000;
+        #close-menu {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+
+        img {
+          filter: invert(100%);
+        }
+      }
+      a {
+        margin-right: auto !important;
+        margin-left: auto !important;
+        &.active {
+          span {
+
+          color: black
+           !important;
+          }
+        }
+      }
+      }
+      .hb-logo {
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      #close-menu {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+      }
+      a {
+        margin-right: auto !important;
+        margin-left: auto !important;
+        &.active {
+          span {
+
+          color: red !important;
+          }
+        }
+      }
+      .run-party-menu {
+        width: auto !important;
+          margin-left: auto;
+          margin-right: auto;
+        a.active {
+          span {
+            color: red !important;
+          }
+        }
+      }
     } 
     #page-header-mobile {
       background-color: transparent;
@@ -268,10 +331,16 @@ html, body {
         height: 60%;
         padding: 0;
         right: -5%;
+        cursor: pointer;
         img {
           height: 90%;
           margin-top: 10%;
           width: auto;
+        }
+        &.black {
+          img {
+            filter: invert(100%);
+          }
         }
       }
       .hb-logo {
