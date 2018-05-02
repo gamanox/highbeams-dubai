@@ -214,6 +214,20 @@ html, body {
     background-repeat: no-repeat !important;
     background-position: 0 0 !important;
     margin-left: 70px;
+    &.white {
+      background-image: url('/images/sound-white.png') !important;
+
+    }
+    &.white.off {
+      background-image: url('/images/sound-off.png') !important;
+    }
+    &.black {
+      background-image: url('/images/sound-black.png') !important;
+
+    }
+    &.black.off {
+      background-image: url('/images/sound-off.png') !important;
+    }
   }
 }
 
@@ -238,7 +252,7 @@ html, body {
       background-color: #000;
       text-align: center;
       &.active {
-        display: block;
+        display: block !important;
       }
       &.white {
         background-color: #fff;
