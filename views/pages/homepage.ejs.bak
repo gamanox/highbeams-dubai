@@ -1,18 +1,17 @@
 <div id="homepage" :class="[heroHeightSet ? '' : 'uninitialized']" v-cloak>
   <div class="hero d-flex flex-column justify-content-center" full-page-hero>
-    <!-- <a href="/parties" class="parties-btn home-btn">
+    <a href="/parties" class="parties-btn home-btn">
       
         <div class="party"></div>
     </a>
     <a href="/runs" class="runs-btn home-btn">
       
         <div class="run"></div>
-    </a> -->
+    </a>
     <div class="container text-center">
       <div class="hero-image">
         
         <img class="logo" src="/images/highbeamsdubai-home-logo.png"/>
-        <img class="logo" src="/images/pay.png"/>
       </div>
       <!-- <h1 class="display-4">A new <strong>Sails</strong> app.</h1> -->
       <!-- <div>
